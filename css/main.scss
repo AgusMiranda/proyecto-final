@@ -1,0 +1,517 @@
+/*CSS INDEX.HTML*/
+@import url(../css/_variables.scss);
+body {
+  background: nth($list: color, $n:1 );
+  background: radial-gradient(rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%) ;
+  margin: nth($list: margin, $n:1 );
+  padding: 0px;
+}
+
+/*Formato a la lista del nav*/
+
+nav div a img {
+  width: 90px;
+}
+
+header nav {
+  div {
+    background-color: black;
+    margin: 0px;
+  }
+
+  ul li a {
+    color: rgb(228, 204, 228) !important;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+
+.navbar-brand {
+  transition: 2s;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+.nav.item {
+  background-color: black;
+}
+
+.navbar {
+  padding: 0px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.dropdown-item {
+  color: black !important;
+  font-family: 'roboto';
+  
+}
+
+.dropdown-menu {
+  margin: black !important;
+  padding: 5px !important;
+}
+
+/*Seccion principal index*/
+
+.card {
+  width: 400px;
+  height: 400px;
+}
+
+/*seccion carousel*/
+
+.carousel-inner {
+  img {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  height: 100%;
+}
+
+.carousel {
+  margin-top: 80px;
+}
+
+/*seccion principal*/
+
+.postertamaño {
+  padding: 10px;
+  width: 330px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+section .imagenFondo {
+  background-size: 100px;
+  background-repeat: repeat;
+}
+
+main section p {
+  color: black;
+}
+
+/*seccion mas vendidos*/
+
+.masVendidos {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+  background-color: white;
+  padding: 20px;
+}
+
+.img-thumbnail {
+  padding: 5px;
+  width: 260px;
+  height: 350px;
+  margin-top: 20px;
+  transition: 2deg;
+
+  &:hover {
+    filter: opacity(0.5);
+  }
+}
+
+/*seccion footer*/
+
+#footer {
+  background: #353333dc;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+#pie-footer {
+  background: black;
+  width: 100%;
+  height: auto;
+}
+
+
+.titulo-footer {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+.contacto-footer {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 35px;
+  font-weight: 800PX;
+  font-weight: 900;
+}
+
+.titulodecontacto {
+  color: #fff;
+}
+
+.imgIcon {
+  height: 28px;
+  width: 28px;
+}
+
+.linkColor {
+  color: white;
+}
+
+
+
+/*seccion fotos*/
+
+.imagenTamaño {
+  margin: 10px;
+  margin-right: 20px;
+  padding: 5px;
+  border: solid black 2px;
+  width: 400px;
+  height: 600px;
+}
+
+.grid-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagenTamaño {
+  transition: 2deg;
+
+  &:hover {
+    transform: translate(10px, 20px);
+  }
+}
+
+/*******Seccion shop********/
+
+.sectionShop {
+  background-image: url(../archivos/img/fondo.jpeg);
+  background-attachment: fixed;
+  overflow: visible;
+  text-align: center;
+  filter: opacity(70%);
+  color: black;
+}
+
+.tituloShop {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.ShopTitle {
+  padding-top: 150px;
+  background-image: url(../archivos/img/fondo.jpeg);
+  background-attachment: fixed;
+  overflow: visible;
+  text-align: center;
+  display: block;
+  align-items: center;
+  filter: opacity(70%);
+  color: black;
+}
+
+.tituloPrincipalShop {
+  font-weight: bold;
+  color: black;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.dropdown-menu {
+  padding: 50px;
+  margin: 50px;
+  background-color: blanchedalmond;
+}
+
+.card-img-top{
+  width: 18rem;
+  height: 17rem;
+  transition: 2deg;
+
+  &:hover{
+    filter: opacity(0.5);
+  }
+} 
+
+.card-body{
+  text-align: center;
+  padding: 0px;
+}
+
+.row{
+  flex-wrap: nowrap;
+  padding: 20px;
+  margin: 0px;
+}
+
+
+
+
+
+/*Seccion principal de como comprar*/
+
+.img-fluid {
+  background-size: cover;
+}
+
+.comoComprar {
+  padding-top: 150px;
+  background-image: url(../archivos/img/fondo.jpeg);
+  background-attachment: fixed;
+  overflow: visible;
+  text-align: center;
+  display: block;
+  align-items: center;
+  filter: opacity(70%);
+  color: black;
+}
+
+.tituloCompra {
+  font-weight: bold;
+  color: nth($list: color, $n: 1 );
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.seccionPrincipal {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  gap: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 100px;
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+ 
+}
+
+.tituloIcons {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagos {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+/*seccion contacto*/
+
+.contactanos {
+  padding-top: 150px;
+  background-image: url(../archivos/img/fondo.jpeg);
+  background-attachment: fixed;
+  overflow: visible;
+  text-align: center;
+  display: block;
+  align-items: center;
+  filter: opacity(70%);
+  color: nth($list: color, $n: 1 );
+}
+
+.tituloContacto {
+  font-weight: bold;
+  color: nth($list: color, $n: 1 );
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.formularioContacto{
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  width: 50%;
+  background-color: #c3e3e0;
+  padding-left:10px;
+  
+}
+
+.ubicacionContacto{
+  width: 50%;
+  
+}
+
+
+.boton{
+  padding-top: 10px;
+  padding-bottom: 5px ;
+}
+
+/*Pie de pagina*/
+
+/*titulo h3*/
+
+h3 {
+  font-family: 'roboto';
+  font-weight: 900;
+  color: black;
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+
+/*seccion redes sociales*/
+
+/*seccion faqs*/
+
+.pregFrecuentes {
+  padding-top: 150px;
+  background-image: url(../archivos/img/fondo.jpeg);
+  background-attachment: fixed;
+  overflow: visible;
+  text-align: center;
+  display: block;
+  align-items: center;
+  filter: opacity(70%);
+  color: black;
+}
+
+.tituloFaqs {
+  font-weight: bold;
+  color: nth($list: color, $n: 1 );
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+/*media querie*/
+
+@media  (max-width: 768px) {
+  body {
+    background-color: rgb(238, 174, 202);
+  
+
+    #nav {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+  }
+
+
+  .carousel-inner {
+    img {
+      width: 100%!important;
+      max-height: 100% !important;
+    }
+
+    height: 100%;
+  }
+
+  .carouselMedia {  
+    height: 100%;
+    width: 100%;
+  }
+
+  .imagenTamaño {
+    height: 90%;
+  }
+
+  .d-flex {
+    padding-bottom: 10px;
+  }
+
+.seccionFotos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.postertamaño{
+  width: 300px;
+  height: 400px;
+  padding: 5px;
+  margin: 5px;
+}
+  .navbar-light .navbar-toggler-icon{
+    background-image: url(../iconos/menucolor.png) !important;
+  }
+ 
+
+/*seccion shop*/
+
+.row{
+  flex-wrap: wrap;
+}
+
+.col-3{
+  width: auto;
+  padding: 10px;  
+}
+
+
+
+
+/*seccion como comprar*/
+
+.seccionPrincipal{
+display: flex;
+flex-direction: column;
+}
+
+.pagos{
+display: grid;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+}
+
+.imgPagos{
+  text-align: center;
+}
+}
+
+/*seccion contacto */
+
+.formularioContacto{
+  width: auto;
+}
+
+
+@media  (max-width: 1024px){
+.seccionFotos{
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+  .navbar-light .navbar-toggler-icon{
+    background-image: url(../iconos/menucolor.png) !important;
+  }
+
+/*seccion pagos media querie*/
+
+
+} 
